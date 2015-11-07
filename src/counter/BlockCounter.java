@@ -22,6 +22,7 @@ public class BlockCounter {
 		while(length != -1)
 		{
 			block_num++;
+			length = reader.read(bb);
 		}
 		System.out.println("The  total block number  is: "+block_num);
 		reader.close();
